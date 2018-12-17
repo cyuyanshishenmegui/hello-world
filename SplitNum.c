@@ -1,5 +1,19 @@
-//输入整数，将每位数字打印出来（从左向右打印，空格区分）
-//2018/11/14 更新
-int main() {
-    //to do sth
-}
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d",&a);
+	int p[8];
+	int i=0;
+	while(a>0)
+	{
+		p[i]=a%10;
+		a=a/10;
+		i++; 
+    }
+	for(int j=i-1;j>=0;j--)
+	{
+		printf("%d ",p[j]);
+	}
+	return 0;
+} 
