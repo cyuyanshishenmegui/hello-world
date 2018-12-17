@@ -1,5 +1,18 @@
-//ç´ æ•°æ˜¯åªæœ‰1å’Œæœ¬èº«æ˜¯å› å­çš„æ•°
-//2018/11/14 æ›´æ–°
-int main() {
-    //to do sth
-}
+#include<stdio.h>
+int main()
+{
+	int m,i;
+	double c=1.00,b;
+	scanf("%d",&m);
+    for(i=2;i<m;i++)
+	{
+		
+		b=m%i;
+		c=c*b;
+	} 
+	if(c!=0)
+	printf("%dÊÇËØÊı",m);
+	else
+	printf("%d²»ÊÇËØÊı",m);
+	return 0;
+} 
